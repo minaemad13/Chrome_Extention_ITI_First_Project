@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "SEO Helper",
+  "description": "This extension shows meta tags (Description , KeyWords) on the page",
+  "version": "1.0",
+  
+  "browser_action": {
+    "default_icon": "images.png",
+    "default_popup": "SEO.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [ "meta.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/",
+    "https://*/"
+    
+   ]
+}

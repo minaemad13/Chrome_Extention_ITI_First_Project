@@ -1,0 +1,13 @@
+{
+  "name": "Youtube Add Skipper",
+  "version": "1.0.0",
+  "description": "a extention of automatically skipping youtube add",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*", "http://www.youtube.com/*"],
+    "js": ["youtube_add_skipper.js"]
+  }],
+  "browser_action": {
+    "default_icon": "unnamed.png"
+  }
+}

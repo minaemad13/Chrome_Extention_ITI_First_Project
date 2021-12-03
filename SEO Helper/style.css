@@ -1,0 +1,91 @@
+body {
+  font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 100%;
+  width: 800px;
+  height: 700px;
+  
+}
+
+ul li{
+  list-style-type: circle;  
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+ 
+  height:100%;
+  width: 140px;
+
+  background-color: rgb(54, 130, 230);
+  
+}
+
+nav ul li{
+
+  text-align: left;
+  display: block;
+  height: 100px;
+  position: relative;
+  left: -20px;
+  border-bottom: 3.5px solid rgb(11, 72, 129); 
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+nav ul li a{
+  position: relative;
+  top: 50px;
+  color: white;
+  text-decoration: none;
+  right: 1px;
+}
+nav ul li a:hover{
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+/* page is devided into tabs */
+
+.tabs{
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  width: 600px;
+  height: 800px;
+}
+
+.tabs .tab:first-child{
+  display: block;
+}
+
+.tabs .tab {
+    display: none;
+    z-index: 0;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    width: 100%;
+    min-height: 700px;
+    background-color: white;
+}
+
+.tabs .tab:target {
+    z-index: 80;
+    display: block;
+}
+
+.tabs .tab div{
+  border-bottom: 3px solid rgb(29, 28, 122);
+}
+
+
+
+.headers ul li h2, .header-list{
+ display: inline-block;
+}
+ 
